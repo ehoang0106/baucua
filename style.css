@@ -26,8 +26,7 @@
     flex-wrap: wrap;
 
     margin-left: 100px;
-    margin-right: auto;
-
+    margin-bottom: 50px;
     position: absolute;
     bottom: 310px;
     z-index: 5;
