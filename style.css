@@ -24,7 +24,6 @@
     display: flex;
     width: 300px;
     flex-wrap: wrap;
-
     margin-left: 100px;
     margin-bottom: 50px;
     position: absolute;
@@ -42,4 +41,3 @@
     display: block;
     margin-left: 50px;
 }
-

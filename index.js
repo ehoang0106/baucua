@@ -8,7 +8,7 @@ const $shuffleButton = $("#shuffle")
 let atOriginalPosition = true;
 
 const moveDistance = 300;
-const speed = 500;
+const speed = 600;
 
 function moveBowlUp(){
     $img.animate({
@@ -37,22 +37,15 @@ $shuffleButton.on("click", function(){
 //roll dice cube
 
 function rollCube () {
-    cubes = ["ca", "cua", "bau", "ga", "huu", "tom"];
-    var ranCube1 = Math.floor(Math.random() * 6) ;
-    var ranCube2 = Math.floor(Math.random() * 6) ;
-    var ranCube3 = Math.floor(Math.random() * 6) ;
-
-    var srcCube1 = "./image/" + cubes[ranCube1] + ".png";
-    var srcCube2 = "./image/" + cubes[ranCube2] + ".png";
-    var srcCube3 = "./image/" + cubes[ranCube3] + ".png";
-
-
-    $(".first").attr("src", srcCube1);
-    $(".second").attr("src", srcCube2);
-    $(".third").attr("src", srcCube3);
-
-
-
+    var cubes = ["ca", "cua", "bau", "ga", "huu", "tom"];
+    var cubeClasses = [".first", ".second", ".third"];
+    
+    for (var i = 0; i < cubeClasses.length; i++) {
+        var ranIndex = Math.floor(Math.random() * cubes.length);
+        var srcCube = "./image/" + cubes[ranIndex] + ".png";
+        $(cubeClasses[i]).attr("src", srcCube);
+    }
 
 }
+
 
