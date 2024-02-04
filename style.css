@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#bowl {
+    width: 400px;
+    position: relative;
+    bottom: 0;
+    z-index: 10;
+}
+
+#disk {
+    width: 400px;
+    position: absolute;
+}
