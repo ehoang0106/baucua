@@ -21,21 +21,26 @@
 
 
 .cube-block {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    
-    
-    justify-content: center;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+
+    margin-left: 100px;
+    margin-right: auto;
 
     position: absolute;
-    bottom: 350px;
+    bottom: 310px;
     z-index: 5;
 }
 
-.cube {
+
+.cube-block img {
     width: 100px;
-    margin: 5px;
-    flex: 0 0 50%;
+}
+
+
+.second-row {
+    display: block;
+    margin-left: 50px;
 }
 
