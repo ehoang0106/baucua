@@ -5,7 +5,8 @@ const $closeButton = $("#close");
 const $shuffleButton = $("#shuffle")
 
 
-let atOriginalPosition = true;
+let originalPosition = true;
+let movedUp = true;
 
 const moveDistance = 300;
 const speed = 600;
@@ -23,11 +24,18 @@ function moveBowlDown() {
 }
 
 $openButton.on("click", function() {
-    moveBowlUp();
+    if(originalPosition){
+        moveBowlUp();
+        originalPosition = false;
+    } 
 });
 
 $closeButton.on("click", function() {
-    moveBowlDown();
+    if(!originalPosition){
+        moveBowlDown();
+        originalPosition = true;
+    }
+
 });
 
 $shuffleButton.on("click", function(){

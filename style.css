@@ -6,6 +6,8 @@ body {
     background-size: cover;
 }
 
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -15,10 +17,11 @@ body {
 }
 
 #bowl {
-    width: 400px;
+    width: 420px;
     position: relative;
     bottom: 0;
     z-index: 10;
+
 }
 
 #disk {
@@ -48,4 +51,70 @@ body {
 .second-row {
     display: block;
     margin-left: 50px;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.button {
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition-duration: 0.4s;
+
+}
+
+
+#shuffle {
+    background-color: #FF9800;
+}
+
+#open {
+    background-color: #65B741;
+}
+
+#close {
+    background-color: #B80000;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 750px) {
+    #bowl {
+        width: 320px;
+        position: relative;
+        bottom: 0;
+        z-index: 10;
+    
+    }
+    
+    #disk {
+        width: 300px;
+        position: absolute;
+    }
+}
+
+
+@media screen and (min-width: 751px) {
+    #bowl {
+        width: 420px;
+        position: relative;
+        bottom: 0;
+        z-index: 10;
+    
+    }
+    
+    #disk {
+        width: 500px;
+        position: absolute;
+    }
 }
