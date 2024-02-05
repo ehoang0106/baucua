@@ -57,3 +57,37 @@ function rollCube () {
 }
 
 
+
+var closeBgColor = "#f8d7da";
+var closeTextColor = "#721c24";
+
+var openBgColor = "#C1F2B0";
+var openTextColor = "#339900";
+
+function showAlert(id, textColor, bgColor) {
+    
+
+    $(`#${id}`).css("backgroundColor", bgColor);
+    $(`#${id}`).css("color", textColor);
+
+
+    $(`#${id}`).fadeIn();
+    
+    setTimeout(() => {
+        $(`#${id}`).fadeOut();
+    }, 1000);
+}
+
+
+
+$("#open").on("click", function(){
+    showAlert("alertOpen", openTextColor, openBgColor);
+});
+
+$("#close").on("click", function(){
+    showAlert("alertClose", closeTextColor, closeBgColor);
+});
+
+$("#shuffle").on("click", function(){
+    showAlert("shuffleOpen", openTextColor, openBgColor);
+});
