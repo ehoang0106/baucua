@@ -92,3 +92,8 @@ $("#close").on("click", function(){
 $("#shuffle").on("click", function(){
     showAlert("shuffleOpen", openTextColor, openBgColor);
 });
+
+
+$shuffleButton.on("click", function () {
+    rollCube();
+});
