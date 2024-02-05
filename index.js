@@ -56,7 +56,7 @@ function rollCube () {
 
 }
 
-
+//alert box
 
 var closeBgColor = "#f8d7da";
 var closeTextColor = "#721c24";
@@ -77,6 +77,7 @@ function showAlert(id, textColor, bgColor) {
         $(`#${id}`).fadeOut();
     }, 1000);
 }
+
 
 
 
